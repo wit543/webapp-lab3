@@ -1,0 +1,24 @@
+{
+    "questions": [
+        {
+            "question": "aple",
+            "answer": "a",
+            "options":[
+                "a",
+                "b",
+                "c",
+                "d"
+            ]
+        },
+        {
+            "question": "orange",
+            "answer": "b",
+            "options":[
+                "a",
+                "b",
+                "c",
+                "d",
+            ]
+        }
+    ]
+}
