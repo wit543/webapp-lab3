@@ -16,13 +16,13 @@ function getRandomInt(max) {
   }
 
 class Game{
-    constructor(){
-        this.init()
+    constructor(numquestion){
+        this.init(numquestion)
     }
-    init(){
+    init(numquestion){
 
         this.questions = []
-        this.questionCount = 15 
+        this.questionCount = numquestion
         this.state = "question"
         this.answers = []
         this.askedQuestions = []
@@ -129,7 +129,17 @@ function reset(){
     let result = document.getElementById("result")
     result.style.display = "none" 
 }
-update()
+function start(numquestion){
+    g = new Game(numquestion)
+    update()
+    let container = document.getElementById("container")
+    container.style.display = "inline-block"
+    let result = document.getElementById("result")
+    result.style.display = "none" 
+    let start = document.getElementById("start")
+    start.style.display = "none" 
+}
+
 // console.log(question)
 // console.log(g.getQuestion())
 // console.log(g.questionCount)

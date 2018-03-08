@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 #container {
     width: 50%;
-    display: inline-block;
+    display: none;
 }
 #answer{
     width: 100%;
